@@ -1,0 +1,12 @@
+body {
+  font-family: Verdana, sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: skyblue;
+  cursor: pointer;
+}
