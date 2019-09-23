@@ -9,14 +9,24 @@
   <body class="container">
 
     <script>
-      'use strict'
+      'use strict';
 
-      for( let i=0; i<100; i++){
+      const num = 5;
+      const winner = Math.floor(Math.random() * num);
+
+      for( let i=0; i<num; i++){
         const _div = document.createElement('div');
         _div.classList.add('box');
-        _div.textContent = i;
         
         _div.addEventListener('click', () => {
+          if ( i=== winner ) {
+            _div.textContent = 'Win!';
+            _div.classList.add('win');
+          }
+          else {
+            _div.textContent = 'Lose!';
+            _div.classList.add('lose');
+          }
           _div.classList.toggle('circle');
         });
 
