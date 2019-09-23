@@ -7,9 +7,17 @@
   </head>
 
   <body>
-    <div class="box">
+    <div class="box" id="target">
       test
     </div>
+
+    <script>
+      'use strict';
+
+      document.getElementById('target').addEventListener('click', () => {
+        document.getElementById('target').style.background = 'pink';
+      });
+    </script>
   </body>
 
 
