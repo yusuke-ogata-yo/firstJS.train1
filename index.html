@@ -6,18 +6,22 @@
     <link rel="stylesheet" href="css/styles.css">
   </head>
 
-  <body>
+  <body class="container">
+
     <script>
       'use strict'
 
-      const _div = document.createElement('div');
+      for( let i=0; i<100; i++){
+        const _div = document.createElement('div');
+        _div.classList.add('box');
+        _div.textContent = i;
+        
+        _div.addEventListener('click', () => {
+          _div.classList.toggle('circle');
+        });
 
-      _div.classList.add('box');
-      _div.addEventListener('click', () => {
-        _div.classList.toggle('circle');
-      });
-
-      document.body.appendChild(_div);
+        document.body.appendChild(_div);
+      }
     </script>
   </body>
 
