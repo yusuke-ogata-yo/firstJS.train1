@@ -9,4 +9,11 @@ body {
   height: 100px;
   background-color: skyblue;
   cursor: pointer;
+  transition: 0.8s;
+}
+
+.circle {
+  background-color: pink;
+  border-radius: 50%;
+  transform: rotate(360deg);
 }
